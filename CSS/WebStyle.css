@@ -1,5 +1,5 @@
 #wotlk-body {
-  width: 50%;
+  width: 70%;
   margin: auto;
   border: 3px double gray;
   box-shadow: 5px 0px 10px gray;
@@ -20,9 +20,12 @@ header {
   text-align: center;
 }
 
-nav {
-  border: 2px solid black;
+#index-footer, #index-nav {
   background-image: url(../Images/blue.jpg);
+  border: 5px solid black;
+  text-align: center;
+  border-radius: 5px;
+  padding: 2px;
 }
 
 nav li,
@@ -30,17 +33,7 @@ footer li {
   list-style-type: none;
   display: inline;
   padding: 10px;
-  border: solid white 3px;
-  border-radius: 10px;
-}
 
-footer {
-  text-align: center;
-  background-color: gray;
-  padding: 2px;
-  border: 2px double darkgray;
-  border-radius: 5px;
-  background-image: url(../Images/blue.jpg);
 }
 
 footer a,
@@ -160,10 +153,6 @@ main {
   border-radius: 10px;
 }
 
-.photo {
-  height: 800px;
-}
-
 .image-grid img:hover {
   transform: scale(1.35);
 }
@@ -253,9 +242,16 @@ main {
 }
 
 #red a {
-  color: green;
+  color: goldenrod;
 }
 
 #marker {
   list-style: none;
+}
+
+#registration-footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: transparent;
 }
