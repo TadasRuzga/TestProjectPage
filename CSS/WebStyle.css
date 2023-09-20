@@ -244,6 +244,10 @@ main {
   list-style: none;
 }
 
+#backButton:hover {
+  color: aquamarine;
+}
+
 #message {
   text-align: center;
 }
