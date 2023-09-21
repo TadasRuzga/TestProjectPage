@@ -20,7 +20,8 @@ header {
   text-align: center;
 }
 
-#index-footer, #index-nav {
+#index-footer,
+#index-nav {
   background-image: url(../Images/blue.jpg);
   border: 5px solid black;
   text-align: center;
@@ -33,12 +34,11 @@ footer li {
   list-style-type: none;
   display: inline;
   padding: 10px;
-
 }
 
 footer a,
 nav a {
-  color: white;
+  color: goldenrod;
   text-decoration: none;
   font-weight: bold;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -241,10 +241,6 @@ main {
   text-align: center;
 }
 
-#red a {
-  color: goldenrod;
-}
-
 #marker {
   list-style: none;
 }
@@ -254,4 +250,24 @@ main {
   bottom: 0;
   right: 0;
   background: transparent;
+}
+
+#img1,
+#img2,
+#img3,
+#img4,
+#img5,
+#img6 {
+  transition: transform 0.6s ease, box-shadow 0.7s ease; /* Add transitions */
+}
+
+/* Apply a tilt effect and make the image appear to lay back on hover */
+#img1:hover,
+#img2:hover,
+#img3:hover,
+#img4:hover,
+#img5:hover,
+#img6:hover {
+  transform: perspective(1000px) rotateX(20deg); /* Tilt the image back */
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.8); /* Add a darker and wider shadow */
 }
