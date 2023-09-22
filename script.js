@@ -28,23 +28,23 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Random color after click on the body
-document.addEventListener("DOMContentLoaded", function () {
-  const htmlBody = document.querySelector("#wotlk-body");
-  const colors = ["rgb(80, 151, 164)", "rgb(149, 200, 216)"];
-  let usedColors = [];
+// document.addEventListener("DOMContentLoaded", function () {
+//   const htmlBody = document.querySelector("#wotlk-body");
+//   const colors = ["rgb(80, 151, 164)", "rgb(149, 200, 216)"];
+//   let usedColors = [];
 
-  const randomClickFunction = function () {
-    if (colors.length === 0) {
-      colors.push(...usedColors);
-      usedColors = [];
-    }
+//   const randomClickFunction = function () {
+//     if (colors.length === 0) {
+//       colors.push(...usedColors);
+//       usedColors = [];
+//     }
 
-    const randomIndex = Math.floor(Math.random() * colors.length);
-    const randomColor = colors.splice(randomIndex, 1)[0];
-    usedColors.push(randomColor);
-    htmlBody.style.backgroundColor = randomColor;
-  };
+//     const randomIndex = Math.floor(Math.random() * colors.length);
+//     const randomColor = colors.splice(randomIndex, 1)[0];
+//     usedColors.push(randomColor);
+//     htmlBody.style.backgroundColor = randomColor;
+//   };
 
-  htmlBody.onclick = randomClickFunction;
-  randomClickFunction();
-});
+//   htmlBody.onclick = randomClickFunction;
+//   randomClickFunction();
+// });
