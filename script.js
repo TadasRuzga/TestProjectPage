@@ -14,14 +14,7 @@ document.addEventListener("DOMContentLoaded", function () {
       message.textContent = "Passwords do not match, please try again.";
       return;
     }
-
-    const userData = {
-      username: username,
-      email: email,
-      password: password,
-    };
-
-    localStorage.setItem(username, JSON.stringify(userData));
+    
     message.textContent = "Registration successful!";
     registrationForm.reset();
   });

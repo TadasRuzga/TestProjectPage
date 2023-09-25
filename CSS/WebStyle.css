@@ -10,8 +10,22 @@
   position: relative;
 }
 
-#wotlk-body header img {
+#wotlk-body header {
+width: 100%;
+}
 
+#wotlk-body header img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#wotlk-body header {
+  text-align: center;
+  background-image: url(../Images/dragon.JPG);
+  background-size: cover;
+  background-position: center center;
 }
 
 html {
@@ -22,13 +36,6 @@ html {
   background-position: center;
   background-attachment: fixed;
   height: 100vh;
-}
-
-#wotlk-body header {
-  text-align: center;
-  background-image: url(../Images/dragon.JPG);
-  background-size: cover;
-  background-position: center center;
 }
 
 #index-footer,
